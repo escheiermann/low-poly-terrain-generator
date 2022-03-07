@@ -32,7 +32,7 @@ namespace LowPolyTerrainGenerator {
         [Min(0)]
         public int maximumHeight;
         public Material material;
-        public HeightStrategyType heightAlgorithm;
+        public HeightStrategyType heightSource;
         public Texture2D heightMap;
 
         [Range(0.0f, 100.0f)] 
@@ -43,7 +43,7 @@ namespace LowPolyTerrainGenerator {
             options.length = 30;
             options.width = 30;
             options.maximumHeight = 10;
-            options.heightAlgorithm = HeightStrategyType.Random;
+            options.heightSource = HeightStrategyType.Random;
             options.scale = 9.0f;
             return options;
         }

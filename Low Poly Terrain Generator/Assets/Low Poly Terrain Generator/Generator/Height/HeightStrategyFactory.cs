@@ -31,7 +31,7 @@ namespace LowPolyTerrainGenerator.Height {
         /// <param name="options">Options regarding the terrain</param>
         public static HeightStrategy Create(TerrainOptions options) {
             HeightStrategy strategy;
-            switch (options.heightAlgorithm) {
+            switch (options.heightSource) {
                 case HeightStrategyType.Noise: 
                     strategy = new NoiseHeightStrategy(options.length, options.width, options.maximumHeight, options.scale);
                     break;
