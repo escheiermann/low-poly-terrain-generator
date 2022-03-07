@@ -8,7 +8,7 @@ A low poly terrain generator for the Unity Engine as a editor tool.
 ## Usage 
 To use the terrain generator within the Unity Editor, navigate to _GameObject > Generate Low Poly Terrain_.
 
-![editor2](https://user-images.githubusercontent.com/39056343/157113447-15e473a0-729d-4615-90bf-07e4ac7ed688.PNG)
+![editor2](https://user-images.githubusercontent.com/39056343/157121107-a352f1d3-fcb5-4807-8133-ab20c9e9e0b5.PNG)
 
 A new window (Wizard) appears on the screen. Parameters to adjust are:
 - *Length* of the terrain
@@ -62,7 +62,7 @@ Also add a new case to the [HeightStrategyFactory](https://github.com/escheierma
 ```c#
 public static HeightStrategy Create(TerrainOptions options) {
   HeightStrategy strategy;
-  switch (options.heightAlgorithm) {
+  switch (options.heightSource) {
     case HeightStrategyType.MyNewStrategy: // Add your new strategy here
       strategy = new MyNewStrategy(options.length, options.width, options.maximumHeight);
       break;
