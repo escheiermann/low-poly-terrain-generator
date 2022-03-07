@@ -4,6 +4,7 @@ A low poly terrain generator for the Unity Engine as a editor tool.
 ![editor](https://user-images.githubusercontent.com/39056343/157112662-14f3100d-98c6-41f8-8e51-93b891491bf2.PNG)
 
 ## Import
+To use the terrain generator inside your Unity project, copy the files from the [latest release](https://github.com/escheiermann/low-poly-terrain-generator/releases/tag/Latest) and add them to your project assets
 
 ## Usage 
 To use the terrain generator within the Unity Editor, navigate to _GameObject > Generate Low Poly Terrain_.
